@@ -16,6 +16,7 @@
     <title>Responsive resume cv</title>
   </head>
   <body>
+    <!-- <body class="scale-cv"> -->
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
     <nav class="nav bd-container"><a href="#" class="nav__logo">Andrii</a>
@@ -77,11 +78,11 @@
           <section class="home" id="home">
            <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
-                <img src="/img/andres.jpg" alt="Andrii Kurshatsov" class="home__img">
+                <img src="./img/andres.jpg" alt="Andrii Kurshatsov" class="home__img">
                 <h1 class="home__title">Andrii <b>Kurshatsov</b></h1>
                 <h2 class="home__profession">Junior Frontend Developer</h2>
                 <div>
-                  <a download="" href="/pdf/kurshatsov-andrii-junior-frontend-developer.pdf" class="home__button-movil">Download</a>
+                  <a download="" href="./pdf/kurshatsov-andrii-junior-frontend-developer.pdf" class="home__button-movil">Download</a>
                 </div>
               </div>
               <div class="home__adress bd-grid">
@@ -176,7 +177,7 @@
                   <span class="skills__circle"></span> JavaScript
                 </li>  
                 </ul>
-                <ul class="skill__data">
+                <ul class="skill__data"> 
                 <li class="skills__name">
                   <span class="skills__circle"></span> React
                 </li>                
@@ -315,12 +316,10 @@
       <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
     </a>
 
+     <!--========== HTML2PDF ==========-->
+    <script src="./js/html2pdf.bundle.min.js"></script>
+
     <!--========== MAIN JS ==========-->
-    <script src="./js/main.js"></script>
-
-    <!--========== HTML2PDF ==========-->
-    <script src="js/html2pdf.bundle.min.js"></script>
-
-    
+    <script src="./js/main.js"></script>    
   </body>
 </html>
