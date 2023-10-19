@@ -108,7 +108,7 @@ body.scale-cv{
 }
 
 .scale-cv .section {
-  padding: 1.5rem 0 .80rem;
+  padding: .60rem 0 .80rem;
 }
 
 .scale-cv .section-title {
@@ -127,7 +127,7 @@ body.scale-cv{
 }
 
 .scale-cv .home__container{
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .scale-cv .home__data{
@@ -218,7 +218,7 @@ img{
 
 /*========== CLASS CSS ==========*/
 .section{
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .section-title{
@@ -265,7 +265,7 @@ img{
 }
 
 @media screen and (max-width: 968px) {
-  .nav__menu{
+.nav__menu{
     position: fixed;
     bottom: -100%;    
     left: 0;
@@ -278,8 +278,12 @@ img{
     transition: .3s;
   }
 
-  .l-header {
+.l-header {
     background-color: var(--container-color-alt);
+    }
+
+.home__information, .social__container {
+      justify-content: center;
     }
 }
 
@@ -473,11 +477,11 @@ body.dark-theme .home__button-movil:hover {
 
 /*========== SKILLS AND LANGUAGES ==========*/
 
-.skills__content, .languages__content{
+.skills__content, .languages__container{
   grid-template-columns: repeat(2, 1fr);  
 }
 
-.skills__content, .languages__content{
+.skills__content, .languages__container{
   gap: 0;
 }
 
@@ -596,7 +600,7 @@ bottom: 5rem;
   .profile__description{
     text-align: initial;
   }
-
+  
   .home__container{
     gap: 1.5rem;
   }
@@ -605,7 +609,7 @@ bottom: 5rem;
     display: none;
   }
 
-  .languages__content{
+  .languages__container{
     grid-template-columns: repeat(3, max-content);
     column-gap: 3.5rem;
   }
