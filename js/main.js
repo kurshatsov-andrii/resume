@@ -57,7 +57,6 @@ function scrollTop() {
 window.addEventListener("scroll", scrollTop);
 
 /*==================== DARK LIGHT THEME ====================*/
-/*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "bx-sun";
@@ -113,7 +112,7 @@ let resumeButton = document.getElementById("resume-button");
 
 let opt = {
   margin: 0,
-  filename: "myResume.pdf",
+  filename: "kurshatsov-andrii-junior-frontend-developer.pdf",
   image: { type: "jpeg", quality: 0.98 },
   html2canvas: { scale: 4 },
   jsPDF: { format: "a4", orientation: "portrait" },

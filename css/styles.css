@@ -51,7 +51,7 @@ body.dark-theme{
   --text-color: #BFBFBF;  
   --container-color: #212121;
   --container-color-alt: #181616;
-  --body-color: #2B2B2B;
+  --body-color: #2B2B2B;  
 }
 
 /*========== Button Dark/Light ==========*/
@@ -190,6 +190,7 @@ body{
   font-size: var(--normal-font-size);
   border-color: var(--body-color);
   color: var(--text-color);
+  background-color: var(--body-color);
 }
 
 h1, h2, h3, ul, p {
@@ -252,6 +253,7 @@ img{
   z-index: var(--z-fixed);
   background-color: var(--body-color);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .1);
+  transition: .3s;
 }
 
 /*========== NAV ==========*/
@@ -263,18 +265,22 @@ img{
 }
 
 @media screen and (max-width: 968px) {
-  .nav-menu{
+  .nav__menu{
     position: fixed;
-    bottom: -100%;
+    bottom: -100%;    
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
-    background-color: var(--body-color);
+    background-color: var(--container-color-alt);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transition: .3s;
   }
+
+  .l-header {
+    background-color: var(--container-color-alt);
+    }
 }
 
 .nav__logo, .nav__toggle{
@@ -383,7 +389,14 @@ img{
 
 .home__button-movil:hover {
   border-color: var(--text-color);
-  color: var(--container-color);
+  color: var(--body-color);
+  background-color: #000;
+  }
+
+body.dark-theme .home__button-movil:hover {
+  border-color: var(--text-color);
+  color: var(--body-color);
+  background-color: #fff;
 }
 
 /*========== SOCIAL ==========*/
