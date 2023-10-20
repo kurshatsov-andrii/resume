@@ -187,8 +187,7 @@ body{
   margin: 0 0 var(--header-height) 0;
   padding: 0;
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  border-color: var(--body-color);
+  font-size: var(--normal-font-size);  
   color: var(--text-color);
   background-color: var(--body-color);
 }
@@ -203,7 +202,6 @@ h1, h2, h3{
 }
 
 ul{
-  /* padding: 0; */
   list-style: none;
 }
 
@@ -225,8 +223,7 @@ img{
   font-size: var(--h2-font-size);
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  letter-spacing: .35rem;
-  /* text-transform: uppercase; */
+  letter-spacing: .35rem;  
   text-align: center;
   margin-bottom: var(--mb-3);
 }
@@ -320,7 +317,7 @@ img{
 }
 
 .nav__icon{
-  font-style: 1.2rem;
+  font-size: 1.2rem;
   margin-bottom: var(--mb-1);
 }
 /* Show menu */
@@ -518,32 +515,12 @@ body.dark-theme .home__button-movil:hover {
   margin-right: .75rem;
 }
 
-/*========== CERTIFICATES ==========*/
-.work__title, .references__title{
+/*========== WORK ==========*/
+.work__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
 
-/*========== REFERENCES ==========*/
-
-
-/*========== INTERESTS ==========*/
-.interests__container{
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: var(--mb-2);
-}
-
-interests__content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.interests__icon{
-font-size: 1.5rem;
-color: var(--text-color-light);
-margin-bottom: .25rem;
-}
 
 /* Scroll top */
 .scrolltop{
