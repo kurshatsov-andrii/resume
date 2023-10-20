@@ -147,7 +147,7 @@ body.scale-cv{
 
 .scale-cv .education__container,
 .scale-cv .experience__container,
-.scale-cv .certificate__container{
+.scale-cv .work__container{
   gap: 1rem;
 }
 
@@ -519,7 +519,7 @@ body.dark-theme .home__button-movil:hover {
 }
 
 /*========== CERTIFICATES ==========*/
-.certificate__title, .references__title{
+.work__title, .references__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
